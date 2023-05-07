@@ -248,35 +248,62 @@ font-style: normal;
       display: none;
     }
   }
-/* @media only screen and (min-width: 768px) {
-  .page-address {
-    display: flex;
-    flex-direction: column;
-  }
-} */
+
 .address-item {
 }
+/* Tablet styles */
 .address-link {
 font-style: normal;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
+font-weight: 400;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.04em;
 color: var(--color-slate);
 
 display: block;
-padding-top: 24px;
-padding-bottom: 24px;
+
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 transition-property: color;
 }
-.address-list {
-display: flex;
-align-items: center;
-gap: 40px;
-}
 
-/* Hero sections */
+/* Desktop styles */
+@media only screen and (mix-width: 1158px) {
+  .address-link {
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+}
+/* Tablet styles */
+@media only screen and (min-width: 768px) {
+  .address-list {
+    max-width: 1157px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+} 
+/* Desktop styles */
+@media only screen and (min-width: 1158px) {
+    .address-list {
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+      align-items: center;
+    }
+  } 
+
+/**
+  |============================
+  | Hero sections
+  |============================
+*/
+
 .hero-section {
 max-width: 1440px;
 margin: 0 auto;
@@ -288,6 +315,8 @@ background-size: cover;
 text-align: center;
 padding: 188px 0;
 }
+
+
 .hero-title {
 font-size: 56px;
 line-height: 1.07;
