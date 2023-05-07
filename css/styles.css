@@ -101,8 +101,20 @@ outline-offset: -2px;
     }
   }
 
-.section {
+  .section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  /* Desktop styles */
+@media only screen and (min-width: minwidthpx) {
+    .section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+  }
 }
+
+
 .visually-hidden {
 position: absolute;
 width: 1px;
@@ -389,30 +401,91 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 /* Advantages */
 .advantages-section {
 display: flex;
-padding: 120px 0;
+}
+/* Mobile styles */
+@media only screen and (max-width: 767px) {
+  .advantages-list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+  }
+}
+/* Tablet styles */
+
+@media only screen and (min-width: 768px) {
+    .advantages-list {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+  }
 }
 
-.advantages-list {
-display: flex;
-gap: 24px;
+/* Desktop styles */
+@media only screen and (min-width: 1158px) {
+  .advantages-list {
+    gap: 24px;
+  }
 }
+
+/* Mobile styles */
 .advantages-item {
- width: calc((100% - 72px) / 4);
+    width: 100%;
 }
+/* Tablet styles */
+@media only screen and (min-width: 768px) {
+  .advantages-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+/* Desktop styles */
+@media only screen and (min-width: 1158px) {
+  .advantages-item {
+     width: calc((100% - 72px) / 4);
+  }
+}
+/* Mobile styles */
 .advantages-subtitle {
-font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
-letter-spacing: 0.02em;
-color: var(--color-navy-blue);
-margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11; 
+    text-align: center;  
+    letter-spacing: 0.02em;
+    
+    text-transform: capitalize;
+    color: var(--color-navy-blue);
+    margin-bottom: 8px;
 }
+/* Tablet styles */
+@media only screen and (min-width: 768px) {
+  .advantages-subtitle {
+    display: inline-block;
+    text-align: start;
+  }
+}
+/* Desktop styles */
+@media only screen and (min-width: 1158px) {
+    .advantages-subtitle {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+  }
+}
+
 .advantages-text {
+font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color:var(--color-slate);
 }
+/* Desktop styles */
+@media only screen and (min-width: 1158px) {
+  .advantages-text {
+    font-weight: 400;
+  }
+}
+
 .advantages-icon-container{
 display: flex;
 align-items: center;
@@ -422,6 +495,11 @@ height: 112px;
 background:var(--advantages-icon-bg);
 border-radius: 4px;
 margin-bottom: 8px;
+}
+@media only screen and (max-width: 1157px) {
+  .advantages-icon-container {
+    display: none;
+  }
 }
 
 /* section2-What are we doing */
@@ -454,22 +532,63 @@ width: calc((100% - 48px) / 3);
 display: flex;
 gap: 24px;
 }
+/**
+  |============================
+  | Our Team
+  |============================
+*/
 
-/* Our Team */
 .team-sections {
-padding: 120px 0;
 background-color: var(--team-bg-cl);
 }
-.team-list {
-display: flex;
-gap: 24px;
+
+/* Mobile styles */
+@media only screen and (max-width: 767px) {
+  .team-list {
+    display: flex;
+flex-direction: column;
+align-items: center;
+gap: 72px;
+  }
+} 
+
+/* Tablet styles */
+@media only screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 64px;
+  }
 }
+/* Desktop styles */
+@media only screen and (min-width: 1158px) {
+    .team-list {
+      
+      gap: 24px;
+    }
+  }
+
+/* Mobile styles */
 .team-item{
 background-color: var(--color-white);
-width: calc((100% - 72px) / 4);
+width: 264px;
 border-radius: 0px 0px 4px 4px;
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+/* Tablet styles */
+@media only screen and (min-width: 768px) {
+  .team-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+/* Desktop styles */
+@media only screen and (min-width: 1158px) {
+    .team-item {
+      width: calc((100% - 72px) / 4);
+    }
+  }
+
 .team-subtitle {
 font-weight: 500;
 font-size: 20px;
