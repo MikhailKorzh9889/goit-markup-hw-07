@@ -122,13 +122,55 @@
           <h2 class="title-sections">What are we doing</h2>
           <ul class="list sectiontwo-list">
             <li class="section-two-item">
-              <img src="./images/img1.jpg" alt="img1" width="360" height="300"/>
+              <picture>
+                <source media="(min-width: 320px )" 
+                        srcset="
+                                ./images/sectiontwo/img1@1x.webp 1x,
+                                ./images/sectiontwo/img1@1x.webp 2x
+                                " 
+                        type="image/jpg">
+                <img 
+              src="./images/sectiontwo/img1@1x.jpg" 
+              alt="img1" 
+              width="360" 
+              height="300"
+              loading="lazy"
+              />
+              </picture>
             </li>
             <li class="section-two-item">
-              <img src="./images/img2.jpg" alt="img2" width="360" height="300"/>
+              <picture>
+                <source media="(min-width: 320px )" 
+                        srcset="
+                                ./images/sectiontwo/img2@1x.webp 1x,
+                                ./images/sectiontwo/img2@1x.webp 2x
+                                "
+                        type="image/jpg">
+                <img 
+              src="./images/sectiontwo/img2@1x.jpg" 
+              alt="img1" 
+              width="360" 
+              height="300"
+              loading="lazy"
+              />
+              </picture>
              </li>
             <li class="section-two-item">
-              <img src="./images/img3.jpg" alt="img3" width="360" height="300"/>
+              <picture>
+                <source media="(min-width: 320px )" 
+                        srcset="
+                                ./images/sectiontwo/img3@1x.webp 1x,
+                                ./images/sectiontwo/img3@1x.webp 2x
+                                " 
+                        type="image/jpg">
+                <img 
+              src="./images/sectiontwo/img3@1x.jpg" 
+              alt="img1" 
+              width="360" 
+              height="300"
+              loading="lazy"
+              />
+              </picture>
             </li>
           </ul>
         </div>
@@ -139,17 +181,21 @@
         <h2 class="title-sections">Our Team</h2>
         <ul class="team-list list box-contant">
           <li class="team-item">
-            <img 
-               class="img-teem" 
-               srcset="./images/teem/team1@_264.jpg 264w, 
-                       ./images/teem/team1@_528.jpg 528w
-                       "
-               sizes=""
-               src="./images/teem/pf1.jpg" 
-               alt="Team Card Mark Guerrero" 
-               width="264" 
-               height="260"
+            <picture>
+              <source media="(min-width: 320px )" 
+                      srcset="
+                              ./images/teem/team1@1x.webp 1x,
+                              ./images/teem/team1@2x.webp 2x
+                              " 
+                      type="image/jpg">
+              <img 
+            src="./images/teem/pf1.jpg" 
+            alt="img1" 
+            width="264" 
+            height="428"
+            loading="lazy"
             />
+            </picture>
             <div class="team-card">
               <h3 class="team-subtitle">Mark Guerrero</h3>
               <p class="team-text">Product Designer</p>
@@ -202,14 +248,21 @@
             </div>
           </li>
           <li class="team-item">
-            <img 
-               class="img-teem" 
-               rcset="./images/teem/team2@2x.jpg"
-               src="./images/teem/pf2.jpg" 
-               alt="Team Card Tom Ford" 
-               width="264" 
-               height="260"
+            <picture>
+              <source media="(min-width: 320px )" 
+                      srcset="
+                              ./images/teem/team2@1x.webp 1x,
+                              ./images/teem/team2@2x.webp 2x
+                              " 
+                      type="image/jpg">
+              <img 
+            src="./images/teem/pf2.jpg" 
+            alt="img1" 
+            width="264" 
+            height="428"
+            loading="lazy"
             />
+            </picture>
             <div class="team-card">
               <h3 class="team-subtitle">Tom Ford</h3>
               <p class="team-text">Frontend Developer</p>
@@ -262,14 +315,21 @@
             </div>
           </li>
           <li class="team-item">
-            <img 
-               class="img-teem" 
-               rcset="./images/teem/team3@2x.jpg"
-               src="./images/teem/pf3.jpg" 
-               alt="Team Card Camila Garcia" 
-               width="264" 
-               height="260"
+            <picture>
+              <source media="(min-width: 320px )" 
+                      srcset="
+                              ./images/teem/team3@1x.webp 1x,
+                              ./images/teem/team3@2x.webp 2x
+                              " 
+                      type="image/jpg">
+              <img 
+            src="./images/teem/pf3.jpg" 
+            alt="img1" 
+            width="264" 
+            height="428"
+            loading="lazy"
             />
+            </picture>
             <div class="team-card">
               <h3 class="team-subtitle">Camila Garcia</h3>
               <p class="team-text">Marketing</p>
@@ -322,14 +382,21 @@
             </div>
           </li>
           <li class="team-item">
-            <img 
-               class="img-teem" 
-               rcset="./images/teem/team4@1x.jpg 1x, ./images/teem/team4@2x.jpg 2x"
-               src="./images/teem/pf4.jpg" 
-               alt="Team Card Daniel Wilson" 
-               width="264" 
-               height="260"
+            <picture>
+              <source media="(min-width: 320px )" 
+                      srcset="
+                              ./images/teem/team4@1x.webp 1x,
+                              ./images/teem/team4@2x.webp 2x
+                              " 
+                      type="image/jpg">
+              <img 
+            src="./images/teem/pf4.jpg" 
+            alt="img1" 
+            width="264" 
+            height="428"
+            loading="lazy"
             />
+            </picture>
             <div class="team-card">
               <h3 class="team-subtitle">Daniel Wilson</h3>
               <p class="team-text">UI Designer</p>
