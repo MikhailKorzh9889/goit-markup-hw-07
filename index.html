@@ -54,7 +54,7 @@
     </header>
     <main>
       <!--hero image-->
-      <section class="hero-section">
+      <section class="hero-section hero">
         <div class="hero-container container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-btn" type="button" data-modal-open>Order Service</button>
@@ -139,7 +139,17 @@
         <h2 class="title-sections">Our Team</h2>
         <ul class="team-list list box-contant">
           <li class="team-item">
-            <img class="img-teem" src="./images/pf1.jpg" alt="Team Card Mark Guerrero" width="264" height="260"/>
+            <img 
+               class="img-teem" 
+               srcset="./images/teem/team1@_264.jpg 264w, 
+                       ./images/teem/team1@_528.jpg 528w
+                       "
+               sizes=""
+               src="./images/teem/pf1.jpg" 
+               alt="Team Card Mark Guerrero" 
+               width="264" 
+               height="260"
+            />
             <div class="team-card">
               <h3 class="team-subtitle">Mark Guerrero</h3>
               <p class="team-text">Product Designer</p>
@@ -192,7 +202,14 @@
             </div>
           </li>
           <li class="team-item">
-            <img class="img-teem" src="./images/pf2.jpg" alt="Team Card Tom Ford" width="264" height="260"/>
+            <img 
+               class="img-teem" 
+               rcset="./images/teem/team2@2x.jpg"
+               src="./images/teem/pf2.jpg" 
+               alt="Team Card Tom Ford" 
+               width="264" 
+               height="260"
+            />
             <div class="team-card">
               <h3 class="team-subtitle">Tom Ford</h3>
               <p class="team-text">Frontend Developer</p>
@@ -245,7 +262,14 @@
             </div>
           </li>
           <li class="team-item">
-            <img class="img-teem" src="./images/pf3.jpg" alt="Team Card Camila Garcia" width="264" height="260"/>
+            <img 
+               class="img-teem" 
+               rcset="./images/teem/team3@2x.jpg"
+               src="./images/teem/pf3.jpg" 
+               alt="Team Card Camila Garcia" 
+               width="264" 
+               height="260"
+            />
             <div class="team-card">
               <h3 class="team-subtitle">Camila Garcia</h3>
               <p class="team-text">Marketing</p>
@@ -298,7 +322,14 @@
             </div>
           </li>
           <li class="team-item">
-            <img class="img-teem" src="./images/pf4.jpg" alt="Team Card Daniel Wilson" width="264" height="260"/>
+            <img 
+               class="img-teem" 
+               rcset="./images/teem/team4@1x.jpg 1x, ./images/teem/team4@2x.jpg 2x"
+               src="./images/teem/pf4.jpg" 
+               alt="Team Card Daniel Wilson" 
+               width="264" 
+               height="260"
+            />
             <div class="team-card">
               <h3 class="team-subtitle">Daniel Wilson</h3>
               <p class="team-text">UI Designer</p>
@@ -354,8 +385,8 @@
        </div>
       </section>
       <!-- Customers -->
-      <section class="customers-sections">
-        <div class="section container">
+      <section class="section customers-sections">
+        <div class="container customers-conteiner">
           <h2 class="clients-title">Customers</h2>
           <ul class="clients-list list">
             <li class="clients-item">
@@ -503,7 +534,7 @@
       </div>
     </footer>
     <!-- Modal Window -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" type="button" data-modal-close>
           <svg class="modal-icon" width="8" height="8">
@@ -548,7 +579,7 @@
           <button class="modal-btn-sending" type="submit">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
     <!-- Mobile menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
