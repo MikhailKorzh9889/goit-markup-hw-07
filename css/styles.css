@@ -1071,6 +1071,7 @@ fill: var(--color-white);
 
 @media only screen and (max-width: 767px) {
   .filter-list {
+    width: 270px;
     display: flex;
     flex-wrap: wrap;
     gap: 16px 24px;
@@ -1118,7 +1119,7 @@ fill: var(--color-white);
     }
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 767px) {
   .btn-filter {
     padding: 8px 16px;
   }
@@ -1520,12 +1521,13 @@ color:var(--color-iris)
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 100vh;
+    max-height: 100vh;
     padding-top:80px;
     padding-left: 40px;
     padding-bottom: 40px;
     background-color: var(--color-white);
     z-index: 999;
+    overflow-y: auto;
   
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
