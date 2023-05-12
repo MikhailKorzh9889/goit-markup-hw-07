@@ -1521,7 +1521,7 @@ color:var(--color-iris)
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     padding-top:80px;
     padding-left: 40px;
     padding-bottom: 40px;
